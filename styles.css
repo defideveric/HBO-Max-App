@@ -34,11 +34,20 @@ nav {
 }
 
 
-.button1 {
+.button1, .button1:hover {
     color: white;
     text-decoration: none;
     letter-spacing: .1rem;
     cursor: pointer;
+    background: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
+.button1:hover:focus {
+    color: white;
 }
 
 
@@ -53,6 +62,13 @@ nav {
 }
 
 
+.button2:hover{
+    background-color: #C850C0;
+    color: white;
+}
+
+
+
 .header-content {
     position: absolute;
     top: 30%;
@@ -65,6 +81,7 @@ nav {
 .john-wick {
     padding-bottom: 3%;
 }
+
 
 .john-wick-info {
     font-family: "Roboto-Light";
@@ -83,37 +100,81 @@ nav {
     font-size: 30px;
 }
 
+.button3:hover{
+    background-color: #C850C0;
+    color: white;
+    border-color: #C850C0;
+}
+
 .header-options {
+    opacity: 90%;
     display: flex;
     position: absolute;
     top: 95%;
-    left: 37%;
+    left: 34%;
 }
+
+
 
 @media(max-width:635px) {
     .header-options {
         position: relative;
         top: 88%;
-        left: 0%;
+        left: -10%;
     }
 }
 
-.originals-btn {
+.originals-btn, .originals-btn:hover, .originals-btn:hover:focus {
+    font-weight: bold;
+    color: white;
     background: transparent;
     border: none;
     margin-right: 15%;
+    text-decoration: none;
+    position: relative;
+    margin-right: 20%;
 }
 
-.tvShows-btn {
+.tvShows-btn, .tvShows-btn:hover, .tvShows-btn:hover:focus {
+    font-weight: bold;
+    color: white;
     background: transparent;
     border: none;
-    margin-right: 15%;
+    margin-right: 25%;
+    text-decoration: none;
+    position: relative;
 }
 
-.movies-btn {
+.movies-btn, .movies-btn:hover, .movies-btn:hover:focus {
+    font-weight: bold;
+    color: white;
     background-color: transparent;
     border: none;
+    text-decoration: none;
+    position:relative;
 }
+
+.originals-btn::after, .tvShows-btn::after, .movies-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.originals-btn:hover::after, .movies-btn:hover::after, .tvShows-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
 
 .media-selections {
     width: 100%;
@@ -186,14 +247,26 @@ justify-content: center;
 
 }
 
+
+@media (max-width: 635px) {
+    .button4 {
+        margin-left: 8%;
+    }
+
+}
+
 @media (max-width: 635px) {
     .theLastOfUs {
         margin-top: 5%;
-        margin-left: 15%;
+        margin-left: 18%;
     }
 
     .justiceLeague {
         margin-top: 5%;
-        margin-left: 15%;
+        margin-left: 18%;
+    }
+
+    .harryPotter {
+        margin-left: 18%;
     }
 }
