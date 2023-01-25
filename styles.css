@@ -78,7 +78,24 @@ nav {
 
 }
 
+
+
+@media (max-width: 635px) {
+    .header-content {
+        position: absolute;
+        top: 10%;
+    }
+
+    .john-wick {
+        margin-bottom: 35%;
+        text-align: center;
+    }
+}
+
+
+
 .john-wick {
+    font-size: 50px;
     padding-bottom: 3%;
 }
 
@@ -168,6 +185,8 @@ nav {
     transition: transform 250ms ease-in;
 }
 
+
+
 .originals-btn:hover::after, .movies-btn:hover::after, .tvShows-btn:hover::after {
     transform: scaleX(1);
     transform-origin: left;
@@ -250,7 +269,7 @@ justify-content: center;
 
 @media (max-width: 635px) {
     .button4 {
-        margin-left: 8%;
+        margin-left: 15%;
     }
 
 }
@@ -258,15 +277,15 @@ justify-content: center;
 @media (max-width: 635px) {
     .theLastOfUs {
         margin-top: 5%;
-        margin-left: 18%;
+        margin-left: 22%;
     }
 
     .justiceLeague {
         margin-top: 5%;
-        margin-left: 18%;
+        margin-left: 22%;
     }
 
     .harryPotter {
-        margin-left: 18%;
+        margin-left: 22%;
     }
 }
