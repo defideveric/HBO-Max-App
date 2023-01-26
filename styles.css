@@ -11,6 +11,8 @@ body {
     color: white;
 }
 
+
+/*Top of page with John Wick movie info and navigation buttons */
 .header {
     width:100%;
     height: 100vh;
@@ -71,7 +73,7 @@ nav {
 
 .header-content {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 5%;
     text-align: left;
     margin-top: 100px;
@@ -79,22 +81,9 @@ nav {
 }
 
 
-
-@media (max-width: 635px) {
-    .header-content {
-        position: absolute;
-        top: 10%;
-    }
-
-    .john-wick {
-        margin-bottom: 35%;
-        text-align: center;
-    }
-}
-
-
-
 .john-wick {
+    position: relative;
+    top: 20%;
     font-size: 50px;
     padding-bottom: 3%;
 }
@@ -133,14 +122,8 @@ nav {
 
 
 
-@media(max-width:635px) {
-    .header-options {
-        position: relative;
-        top: 88%;
-        left: -10%;
-    }
-}
 
+/*Nav links in center middle of page*/
 .originals-btn, .originals-btn:hover, .originals-btn:hover:focus {
     font-weight: bold;
     color: white;
@@ -195,6 +178,7 @@ nav {
 
 
 
+/*Section for "Continue Watching Movies*/
 .media-selections {
     width: 100%;
     height: 100%;
@@ -234,7 +218,7 @@ justify-content: center;
 
 
 .harryPotter {
-    background-image:linear-gradient(rgba(101, 101, 101, 0.3),rgba(101,101,101,0.3)), url(https://www.soda.com/wp-content/uploads/2020/04/harry-potter-streaming-guide.jpg);
+    background-image:linear-gradient(rgba(101, 101, 101, 0.3),rgba(101,101,101,0.3)), url(images/harry-potter.jpeg);
     background-size: cover;
     background-position: center;
     border: none;
@@ -245,7 +229,7 @@ justify-content: center;
 }
 
 .theLastOfUs {
-    background-image:linear-gradient(rgba(101, 101, 101, 0.3),rgba(101,101,101,0.3)), url(https://pbs.twimg.com/media/FmkShm6WYAIVZV6?format=jpg&name=medium);
+    background-image:linear-gradient(rgba(101, 101, 101, 0.3),rgba(101,101,101,0.3)), url(images/the_last_of_us.jpeg);
     background-size:cover;
     background-position: bottom;
     border: none;
@@ -257,7 +241,7 @@ justify-content: center;
 
 
 .justiceLeague {
-    background-image:linear-gradient(rgba(101, 101, 101, 0.3),rgba(101,101,101,0.3)), url(https://static.wikia.nocookie.net/dccu/images/f/fd/ZSJL_poster_-_League_together.png/revision/latest/scale-to-width-down/675?cb=20210302174150);
+    background-image:linear-gradient(rgba(101, 101, 101, 0.3),rgba(101,101,101,0.3)), url(images/Justice_League.jpg);
     background-size: cover;
     background-position: top;
     border: none;
@@ -267,25 +251,92 @@ justify-content: center;
 }
 
 
+/*For tablet view*/
+@media (width: 768px) {
+    .harryPotter {
+        margin-left: 30%;
+    }
+
+    .theLastOfUs {
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+
+    .justiceLeague {
+        margin-top: 3%;
+        margin-left: 1%;
+    }
+}
+
+@media(width: 768px) {
+    .button4 {
+        margin-left: 23%;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .header-options {
+        position: relative;
+        left: 3%;
+        top: 88%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        position: absolute;
+        top: 15%;
+    }
+}
+
+
+
+
+
+
+/*For mobile view*/
 @media (max-width: 635px) {
     .button4 {
-        margin-left: 15%;
+        margin-left: 11%;
     }
 
 }
-
 @media (max-width: 635px) {
     .theLastOfUs {
         margin-top: 5%;
-        margin-left: 22%;
+        margin-left: 20%;
     }
 
     .justiceLeague {
         margin-top: 5%;
-        margin-left: 22%;
+        margin-left: 20%;
     }
 
     .harryPotter {
-        margin-left: 22%;
+        margin-left: 20%;
     }
 }
+
+@media (max-width: 635px) {
+    .header-content {
+        position: absolute;
+        top: 10%;
+    }
+
+    .john-wick {
+        margin-bottom: 35%;
+        text-align: center;
+    }
+}
+
+@media(max-width:635px) {
+    .header-options {
+        position: relative;
+        top: 88%;
+        left: -10%;
+    }
+}
+
+
+
